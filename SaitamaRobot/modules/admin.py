@@ -18,6 +18,9 @@ from SaitamaRobot.modules.helper_funcs.alternate import send_message
 
 
 @run_async
+@connection_status
+@bot_admin
+@can_promote
 @user_admin
 @loggable
 def promote(update: Update, context: CallbackContext) -> str:

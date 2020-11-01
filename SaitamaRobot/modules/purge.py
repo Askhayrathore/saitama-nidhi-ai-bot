@@ -19,7 +19,7 @@ BLABLEUSERS = [OWNER_ID] + DEV_USERS
 
 @run_async
 @user_admin
-@loggable
+@gloggable
 def purge(bot: Bot, update: Update, args: List[str]) -> str:
     msg = update.effective_message  # type: Optional[Message]
     if msg.reply_to_message:
@@ -71,7 +71,7 @@ def purge(bot: Bot, update: Update, args: List[str]) -> str:
 
 @run_async
 @user_admin
-@loggable
+@gloggable
 def del_message(bot: Bot, update: Update) -> str:
     if update.effective_message.reply_to_message:
         user = update.effective_user  # type: Optional[User]

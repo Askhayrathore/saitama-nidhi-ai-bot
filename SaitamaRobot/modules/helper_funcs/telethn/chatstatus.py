@@ -19,7 +19,7 @@ async def user_is_ban_protected(user_id: int, message):
 async def user_is_admin(user_id: int, message):
     admin = False
     async for user in telethn.iter_participants(
-            chat_id, filter=ChannelParticipantsAdmins):
+            message.chat_id, filter=ChannelParticipantsAdmins):
         if user_id == user.id or user_id in DRAGONS:
             admin = True
             break

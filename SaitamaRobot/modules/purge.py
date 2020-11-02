@@ -4,6 +4,16 @@ from SaitamaRobot import telethn
 import time
 from telethon import events
 
+async def admin_user(user_id: int,message):
+    admin = False
+    async for user in client.iter_participants( message.chat_id, filter=ChannelParticipantsAdmins ):
+        if user_id == user.id or user_id in DRAGONS:
+            admin = True
+            break
+            return admin
+        
+        if not await admin_user(user_id=event.from_id, message=event
+
 
 @telethn.on(events.NewMessage(pattern="^[!/]purge$"))
 async def purge_messages(event):
@@ -11,7 +21,7 @@ async def purge_messages(event):
     if event.from_id is None:
         return
 
-    if not await saitama_is_admin(
+    if not await admin_user(
             user_id=event.from_id, message=event) and event.from_id not in [
                 1087968824
             ]:
@@ -49,7 +59,7 @@ async def delete_messages(event):
     if event.from_id is None:
         return
 
-    if not await saitama_is_admin(
+    if not await admin_user(
             user_id=event.from_id, message=event) and event.from_id not in [
                 1087968824
             ]:

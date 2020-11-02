@@ -11,7 +11,7 @@ async def purge_messages(event):
     if event.from_id is None:
         return
 
-    if not await user_is_admin(
+    if not await saitama_is_admin(
             user_id=event.from_id, message=event) and event.from_id not in [
                 1087968824
             ]:
@@ -49,7 +49,7 @@ async def delete_messages(event):
     if event.from_id is None:
         return
 
-    if not await user_is_admin(
+    if not await saitama_is_admin(
             user_id=event.from_id, message=event) and event.from_id not in [
                 1087968824
             ]:

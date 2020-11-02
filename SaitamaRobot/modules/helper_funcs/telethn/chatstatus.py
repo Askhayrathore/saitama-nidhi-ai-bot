@@ -17,16 +17,13 @@ async def user_is_ban_protected(user_id: int, message):
 
 
 async def user_is_admin(user_id: int, message):
-    status = False
-    if message.is_private:
-        return True
-
+    admin = False
     async for user in telethn.iter_participants(
-            message.chat_id, filter=ChannelParticipantsAdmins):
+            message.chat_id, filter=channelParticipantsAdmins ):
         if user_id == user.id or user_id in DRAGONS:
-            status = True
+            admin = True
             break
-    return status
+    return admin
 
 
 async def is_user_admin(user_id: int, chat_id):

@@ -12,9 +12,6 @@ async def admin_user(user_id: int,message):
             break
             return admin
         
-        if not await admin_user(user_id=event.from_id, message=event)
-
-
 @telethn.on(events.NewMessage(pattern="^[!/]purge$"))
 async def purge_messages(event):
     start = time.perf_counter()

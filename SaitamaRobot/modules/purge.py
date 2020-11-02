@@ -1,5 +1,5 @@
 from SaitamaRobot.modules.helper_funcs.telethn.chatstatus import (
-    can_delete_messages, user_is_admin)
+    can_delete_messages, saitama_is_admin)
 from SaitamaRobot import telethn
 import time
 from telethon import events

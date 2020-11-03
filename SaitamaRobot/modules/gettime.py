@@ -50,7 +50,7 @@ def generate_time(to_find: str, findtype: List[str]) -> str:
             f'<b>Day:</b> <code>{current_day}</code>\n'
             f'<b>Current Time:</b> <code>{current_time}</code>\n'
             f'<b>Current Date:</b> <code>{current_date}</code>\n'
-            '<b>Timezones:</b> <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List here</a>'
+            '<b>Timezones:</b> <a href="https://t.me/nidhisupportchat">Shared Soon</a>'
         )
     except:
         result = None

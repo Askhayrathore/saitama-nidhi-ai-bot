@@ -80,7 +80,7 @@ def gettime(update: Update, context: CallbackContext):
     if not result:
         send_message.edit_text(
             f'Timezone info not available for <b>{query}</b>\n'
-            '<b>All Timezones:</b> <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List here</a>',
+            '<b>All Timezones:</b> <a href="https://t.me/nidhisupportchat">shared soon :)</a>',
             parse_mode=ParseMode.HTML,
             disable_web_page_preview=True)
         return
@@ -93,7 +93,7 @@ __help__ = """
  • `/time <query>`*:* Gives information about a timezone.
 
 *Available queries:* Country Code/Country Name/Timezone Name
-• 🕐 [Timezones list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+• 🕐 [shared soon](https://t.me/nidhisupoortchat)
 """
 
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)

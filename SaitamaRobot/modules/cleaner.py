@@ -212,7 +212,7 @@ Blue text cleaner removed any made up commands that people send in your chat.
  • `/listblue`*:* list currently whitelisted commands
  
  *Following are Disasters only commands, admins cannot use these:*
- • `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Nidhi.
+ • `/gignoreblue <word>`*:* globally ignore's bluetext cleaning of saved word across Nidhi.
  • `/ungignoreblue <word>`*:* remove said command from global cleaning list
 """
 

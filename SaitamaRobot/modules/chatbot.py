@@ -131,7 +131,7 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-<b>Chatbot</b>\nChatbot allows user to chat with bot AI.
+**Chatbot**\nChatbot allows user to chat with bot AI.
 
 *Commands:* 
 *Admins only:*

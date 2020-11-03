@@ -93,7 +93,7 @@ __help__ = """
  • `/time <query>`*:* Gives information about a timezone.
 
 *Available queries:* Country Code/Country Name/Timezone Name
-• 🕐 [shared soon](https://t.me/nidhisupoortchat)
+• 🕐 [shared soon](https://t.me/nidhisupportchat)
 """
 
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)

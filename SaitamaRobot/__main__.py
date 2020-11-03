@@ -212,13 +212,6 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_text(
             "<b>Hello</b>\n<i>I'm Online</i>\n<b>@nidhisupportchat</b>\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
-               reply_markup=InlineKeyboardMarkup(
-                    [[
-                        InlineKeyboardButton(
-                            text="☑️ Add Nidhi to your group",
-                            url="t.me/{}?startgroup=true".format(
-                                context.bot.username))
-                    ]))
 
 
 # for test purposes

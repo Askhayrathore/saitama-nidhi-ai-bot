@@ -69,6 +69,7 @@ def ping_func(to_ping: List[str]) -> List[str]:
 
 
 @run_async
+@sudo_plus
 def ping(update: Update, context: CallbackContext):
     msg = update.effective_message
 
@@ -86,6 +87,7 @@ def ping(update: Update, context: CallbackContext):
 
 
 @run_async
+@sudo_plus
 def pingall(update: Update, context: CallbackContext):
     to_ping = ["google", "bing", "Telegram", "@nidhirobot"]
     pinged_list = ping_func(to_ping)

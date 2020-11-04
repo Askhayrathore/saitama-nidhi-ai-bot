@@ -1,6 +1,6 @@
 # Simple lyrics module using tswift by @TheRealPhoenix
 
-from tswift import Song
+from SaitamaRobot import Song
 
 from telegram import Bot, Update, Message, Chat
 from telegram.ext import run_async

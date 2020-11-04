@@ -49,7 +49,7 @@ def get_percentage(totalhp, earnedhp):
 
 
 def hpmanager(user):
-    total_hp = (get_user_num_chats(user.id) + 10) * 10
+    total_hp = (get_user_num_chats(user.id) + 5) * 5
 
     if not is_user_gbanned(user.id):
 

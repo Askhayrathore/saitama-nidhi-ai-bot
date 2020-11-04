@@ -516,8 +516,8 @@ Examples:
 *Overall Information about you:*
  • `/info`*:* get information about a user. 
  
-*What is that health thingy?*
- @nidhisupportchat)
+*HP System Explained*
+[Click here to see](https://t.me/nidhiupdates/14)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)

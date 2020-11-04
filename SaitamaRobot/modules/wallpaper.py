@@ -53,5 +53,5 @@ def wall(update: Update, context: CallbackContext):
                     timeout=60)
 
 
-WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall)
+WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall, pass_args=True)
 dispatcher.add_handler(WALLPAPER_HANDLER)

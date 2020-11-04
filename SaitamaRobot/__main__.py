@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
                      ]]))
     else:
         update.effective_message.reply_text(
-            "<b>Hey!!</b>\nI'm online\n <a href="https://t.me/nidhiupdates">Updates here</a>\n <a href="https://t.me/nidhisupportchat">Support Chat</a>",
+            "<b>Hey!!</b>\nI'm online\n<b>Updates here</b>\n<b>Support chat</b>",
             parse_mode=ParseMode.HTML)
 
 

@@ -1,4 +1,4 @@
-from datetime import datetime
+rom datetime import datetime
 from functools import wraps
 
 from telegram.ext import CallbackContext
@@ -18,28 +18,34 @@ if is_module_loaded(FILENAME):
     from SaitamaRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
+
         @wraps(func)
-        def log_action(bot: Bot, update: Update, *args, **kwargs):
-            result = func(bot, update, *args, **kwargs)
-            chat = update.effective_chat  # type: Optional[Chat]
-            message = update.effective_message  # type: Optional[Message]
+        def log_action(update: Update,
+                       context: CallbackContext,
+                       job_queue: JobQueue = None,
+                       *args,
+                       **kwargs):
+            if not job_queue:
+                result = func(update, context, *args, **kwargs)
+            else:
+                result = func(update, context, job_queue, *args, **kwargs)
+
+            chat = update.effective_chat
+            message = update.effective_message
+
             if result:
-                if chat.type == chat.SUPERGROUP and chat.username:
-                    result += "\n<b>Link:</b> " \
-                              "<a href=\"http://telegram.me/{}/{}\">click here</a>".format(chat.username,
-                                                                                           message.message_id)
+                datetime_fmt = "%H:%M - %d-%m-%Y"
+                result += f"\n<b>Event Stamp</b>: <code>{datetime.utcnow().strftime(datetime_fmt)}</code>"
+
+                if message.chat.type == chat.SUPERGROUP and message.chat.username:
+                    result += f'\n<b>Link:</b> <a href="https://t.me/{chat.username}/{message.message_id}">click here</a>'
                 log_chat = sql.get_chat_log_channel(chat.id)
                 if log_chat:
-                    send_log(bot, log_chat, chat.id, result)
-            elif result == "":
-                pass
-            else:
-                LOGGER.warning("%s was set as loggable, but had no return statement.", func)
+                    send_log(context, log_chat, chat.id, result)
 
             return result
 
         return log_action
-
 
     def gloggable(func):
 
@@ -184,7 +190,6 @@ if is_module_loaded(FILENAME):
 • `/logchannel`*:* get log channel info
 • `/setlog`*:* set the log channel.
 • `/unsetlog`*:* unset the log channel.
-
 Setting the log channel is done by:
 • adding the bot to the desired channel (as an admin!)
 • sending `/setlog` in the channel

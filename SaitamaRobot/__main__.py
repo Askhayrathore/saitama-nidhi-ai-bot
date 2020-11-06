@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
                      ]]))
     else:
         update.effective_message.reply_text(
-            "<b>Hey!! I'm online</b>\n working since `31 feb 1000` ",
+            "<b>Hey!! I'm online</b>\n<i>How can i help you?</i> ",
             parse_mode=ParseMode.HTML)
 
 

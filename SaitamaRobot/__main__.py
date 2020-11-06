@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
                      ]]))
     else:
         update.effective_message.reply_text(
-            "<b>Hey!!\nI'm online [Add me in your groups](buttonurl://https://t.me/{}?startgroup=true) ",
+            "<b>Hey!! I'm online</b>\n working since `31 feb 1000` ",
             parse_mode=ParseMode.HTML)
 
 

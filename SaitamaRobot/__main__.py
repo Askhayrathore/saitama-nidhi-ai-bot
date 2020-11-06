@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
                      ]]))
     else:
         update.effective_message.reply_text(
-            "<b>Hey!!</b>\nI'm online\n<b>@nidhiupdates</b>\n<b>@nidhisupportchat</b>",
+            "<b>Hey!!\nI'm online [Add me in your groups](buttonurl://https://t.me/{}?startgroup=true) ",
             parse_mode=ParseMode.HTML)
 
 

@@ -527,46 +527,38 @@ __help__ = f"""
 *⚠️ Notice:*
 Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
 Group admins/group owners do not need these commands. 
-
  ╔ *List all special users:*
  ╠ `/dragons`*:* Lists all Dragon disasters
  ╠ `/demons`*:* Lists all Demon disasters
  ╠ `/tigers`*:* Lists all Tigers disasters
  ╠ `/wolves`*:* Lists all Wolf disasters
  ╚ `/heroes`*:* Lists all Hero Association members
-
  ╔ *Ping:*
  ╠ `/ping`*:* gets ping time of bot to telegram server
  ╚ `/pingall`*:* gets all listed ping times
-
  ╔ *Broadcast: (Bot owner only)*
  ╠  *Note:* This supports basic markdown
  ╠ `/broadcastall`*:* Broadcasts everywhere
  ╠ `/broadcastusers`*:* Broadcasts too all users
  ╚ `/broadcastgroups`*:* Broadcasts too all groups
-
- ╔ *Getchats:*
- ╚ `/getchats ID`*:* Gets a list of group names the user has been seen in. Bot owner only
-
+ ╔ *Groups Info:*
+ ╠ `/groups`*:* List the groups with Name, ID, members count as a txt
+ ╚ `/getchats`*:* Gets a list of group names the user has been seen in. Bot owner only
  ╔ *Blacklist:* 
  ╠ `/ignore`*:* Blacklists a user from 
  ╠  using the bot entirely
  ╚ `/notice`*:* Whitelists the user to allow bot usage
-
  ╔ *Speedtest:*
  ╚ `/speedtest`*:* Runs a speedtest and gives you 2 options to choose from, text or image output
-
  ╔ *Global Bans:*
  ╠ `/gban user reason`*:* Globally bans a user
  ╚ `/ungban user reason`*:* Unbans the user from the global bans list
-
  ╔ *Module loading:*
  ╠ `/listmodules`*:* Lists names of all modules
  ╠ `/load modulename`*:* Loads the said module to 
  ╠   memory without restarting.
  ╠ `/unload modulename`*:* Loads the said module from
  ╚   memory without restarting.memory without restarting the bot 
-
  ╔ *Remote commands:*
  ╠ `/rban user group`*:* Remote ban
  ╠ `/runban user group`*:* Remote un-ban
@@ -574,11 +566,9 @@ Group admins/group owners do not need these commands.
  ╠ `/rmute user group`*:* Remote mute
  ╠ `/runmute user group`*:* Remote un-mute
  ╚ `/ginfo username/link/ID`*:* Pulls info panel for entire group
-
  ╔ *Windows self hosted only:*
  ╠ `/reboot`*:* Restarts the bots service
  ╚ `/gitpull`*:* Pulls the repo and then restarts the bots service
-
  ╔ *Chatbot:* 
  ╚ `/listaichats`*:* Lists the chats the chatmode is enabled in
  
@@ -588,7 +578,6 @@ Group admins/group owners do not need these commands.
  ╠ `/eval`*:* Self explanatory
  ╠ `/sh`*:* Self explanator
  ╚ `/py`*:* Self explanatory
-
 Visit @{SUPPORT_CHAT} for more information.
 """
 

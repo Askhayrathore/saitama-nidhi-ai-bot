@@ -355,7 +355,7 @@ def new_member(update: Update, context: CallbackContext):
                         })
                     new_join_mem = f"[{escape_markdown(new_mem.first_name)}](tg://user?id={user.id})"
                     message = msg.reply_text(
-                        f"{new_join_mem}, click the button below to prove you're human.\nYou have 120 seconds.",
+                        f"{new_join_mem}, Hello!!\n<b>To stop spamming of bots without admin permissions this service turned on</b>\n<i>Please click below button<i/>\nYou have 120 seconds.",
                         reply_markup=InlineKeyboardMarkup([{
                             InlineKeyboardButton(
                                 text="Yes, I'm human.",

@@ -74,7 +74,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/04c51a35243f1b2d4ab14.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/9d68b83e56a9f31034775.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Currently nidhi running on free server so no need of donations \

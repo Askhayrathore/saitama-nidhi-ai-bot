@@ -78,7 +78,7 @@ SAITAMA_IMG = "https://telegra.ph/file/9d68b83e56a9f31034775.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Currently nidhi running on free server so no need of donations \
-Join @nidhisupportchat."""
+Join @nidhisupportchat.\n Anyways nidhi working on Saitama bot repo so if you are interested you can donate them"""
 
 IMPORTED = {}
 MIGRATEABLE = []

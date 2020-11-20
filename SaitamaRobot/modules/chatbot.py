@@ -131,14 +131,14 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-**Chatbot**\nChatbot allows user to chat with bot AI.
+Commands to turn on / off AI chatbot
 
 *Commands:* 
 *Admins only:*
  • `/addchat`*:* Enables Chatbot mode in the chat.
  • `/rmchat`*:* Disables Chatbot mode in the chat.
 
-Reports bugs at @{SUPPORT_CHAT}
+Join @{SUPPORT_CHAT}
 """
 
 ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat)

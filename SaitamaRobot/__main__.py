@@ -164,12 +164,7 @@ def start(update, context):
 
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=True,
-            )
-    else:
+      else:
         update.effective_message.reply_text(
             "Heya :) PM me if you have any questions on how to use me!"
         )
